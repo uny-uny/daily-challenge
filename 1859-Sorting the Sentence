@@ -1,0 +1,4 @@
+class Solution:
+    def sortSentence(self, s: str) -> str:
+        word_list = sorted(s.split(), key = lambda word: word[-1])
+        return " ".join([word[:-1] for word in word_list])
